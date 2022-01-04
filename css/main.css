@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside,
+main,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: 'TahomaB';
+  src: url("../fonts/tahomabd.eot");
+  src: local("☺"), url("../fonts/tahomabd.woff") format("woff"), url("../fonts/tahomabd.ttf") format("truetype"), url("../fonts/tahomabd.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tahoma';
+  src: url("../fonts/tahoma.eot");
+  src: local("☺"), url("../fonts/tahoma.woff") format("woff"), url("../fonts/tahoma.ttf") format("truetype"), url("../fonts/tahoma.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  min-width: 320px;
+  height: 100%;
+  font-family: 'Tahoma';
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  padding-top: 160px;
+}
+
+.container {
+  padding: 0px 10px;
+  max-width: 980px;
+  margin: 0px auto;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #503737;
+}
+
+@media (max-width: 870px) {
+  .wrapper {
+    padding-top: 60px;
+  }
+}
